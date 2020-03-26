@@ -8,8 +8,8 @@ from skimage.color import rgb2gray
 import matplotlib.pyplot as plt
 
 
-jpg = Image.open(r"C:\Users\arno\Documents\GitHub\scikit-image-orb-descriptor-dual-image-mapping-d\day.jpg")
-jpg1 = Image.open(r"C:\Users\arno\Documents\GitHub\scikit-image-orb-descriptor-dual-image-mapping-d\night1.jpg")
+jpg = Image.open(r"C:\Users\User\Downloads\Telegram Desktop\day2.jpg")
+jpg1 = Image.open(r"C:\Users\User\Downloads\Telegram Desktop\night2.jpg")
 
 MatImg=np.array(jpg)
 MatImg1=np.array(jpg1)
@@ -38,7 +38,7 @@ plt.gray()
 
 plot_matches(ax, img1, img2, keypoints1, keypoints2, matches12)
 ax.axis('off')
-ax.set_title("Original Image vs. Transformed Image : BRIEF")
+ax.set_title("Lit Image vs. Dark Image : BRIEF")
 
 
 plt.show()
